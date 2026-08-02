@@ -1,0 +1,484 @@
+{
+  "rows": [
+    {
+      "task_id": "citation-check",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 6,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.6,
+      "status_counts": "execution_error:2;pass:6;timeout:2",
+      "failure_type_counts": "agent_setup_error:2;agent_timeout:2;none:6"
+    },
+    {
+      "task_id": "citation-check",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 1,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.1,
+      "status_counts": "execution_error:8;pass:1;timeout:1",
+      "failure_type_counts": "agent_setup_error:6;agent_timeout:1;infra_error:1;none:1;verifier_incomplete:1"
+    },
+    {
+      "task_id": "citation-check",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 9,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.9,
+      "status_counts": "pass:9;timeout:1",
+      "failure_type_counts": "agent_timeout:1;none:9"
+    },
+    {
+      "task_id": "data-to-d3",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 5,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.5,
+      "status_counts": "execution_error:5;fail:5",
+      "failure_type_counts": "agent_setup_error:5;none:5"
+    },
+    {
+      "task_id": "data-to-d3",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 3,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.3,
+      "status_counts": "execution_error:7;fail:3",
+      "failure_type_counts": "agent_setup_error:6;none:3;verifier_incomplete:1"
+    },
+    {
+      "task_id": "data-to-d3",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 10,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 1.0,
+      "status_counts": "fail:10",
+      "failure_type_counts": "none:10"
+    },
+    {
+      "task_id": "dialogue-parser",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 4,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.4,
+      "status_counts": "execution_error:6;fail:4",
+      "failure_type_counts": "agent_setup_error:6;none:4"
+    },
+    {
+      "task_id": "dialogue-parser",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 4,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.4,
+      "status_counts": "execution_error:6;fail:4",
+      "failure_type_counts": "agent_setup_error:6;none:4"
+    },
+    {
+      "task_id": "dialogue-parser",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 9,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.9,
+      "status_counts": "fail:9;timeout:1",
+      "failure_type_counts": "agent_timeout:1;none:9"
+    },
+    {
+      "task_id": "enterprise-information-search",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 3,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.3,
+      "status_counts": "execution_error:5;fail:3;timeout:2",
+      "failure_type_counts": "agent_setup_error:5;agent_timeout:2;none:3"
+    },
+    {
+      "task_id": "enterprise-information-search",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:10",
+      "failure_type_counts": "agent_setup_error:10"
+    },
+    {
+      "task_id": "enterprise-information-search",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 9,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.9,
+      "status_counts": "execution_error:2;fail:8",
+      "failure_type_counts": "NonZeroAgentExitCodeError:2;none:7;verifier_incomplete:1"
+    },
+    {
+      "task_id": "fix-build-agentops",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 10,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 1.0,
+      "status_counts": "fail:10",
+      "failure_type_counts": "fail:10"
+    },
+    {
+      "task_id": "fix-build-agentops",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 1,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.1,
+      "status_counts": "fail:1;timeout:9",
+      "failure_type_counts": "fail:1;timeout:9"
+    },
+    {
+      "task_id": "fix-build-agentops",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 6,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.6,
+      "status_counts": "fail:6;timeout:4",
+      "failure_type_counts": "fail:6;timeout:4"
+    },
+    {
+      "task_id": "fix-build-google-auto",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:7;infra_error:2;timeout:1",
+      "failure_type_counts": "agent_timeout:1;infra_error:3;verifier_incomplete:6"
+    },
+    {
+      "task_id": "fix-build-google-auto",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:8;infra_error:2",
+      "failure_type_counts": "agent_setup_error:1;infra_error:3;verifier_incomplete:6"
+    },
+    {
+      "task_id": "fix-build-google-auto",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 8,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.8,
+      "status_counts": "execution_error:6;fail:2;timeout:2",
+      "failure_type_counts": "NonZeroAgentExitCodeError:6;agent_timeout:2;none:2"
+    },
+    {
+      "task_id": "flink-query",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:6;infra_error:4",
+      "failure_type_counts": "infra_error:4;verifier_incomplete:6"
+    },
+    {
+      "task_id": "flink-query",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 1,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.1,
+      "status_counts": "execution_error:5;infra_error:2;timeout:3",
+      "failure_type_counts": "agent_timeout:3;execution_error:1;infra_error:3;verifier_incomplete:3"
+    },
+    {
+      "task_id": "flink-query",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:6;fail:1;timeout:3",
+      "failure_type_counts": "agent_setup_error:6;agent_timeout:3;verifier_incomplete:1"
+    },
+    {
+      "task_id": "gh-repo-analytics",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 4,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.4,
+      "status_counts": "fail:4;infra_error:5;timeout:1",
+      "failure_type_counts": "agent_timeout:1;infra_error:2;none:4;verifier_incomplete:3"
+    },
+    {
+      "task_id": "gh-repo-analytics",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 5,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.5,
+      "status_counts": "execution_error:1;fail:5;infra_error:3;timeout:1",
+      "failure_type_counts": "agent_setup_error:1;agent_timeout:1;infra_error:2;none:5;verifier_incomplete:1"
+    },
+    {
+      "task_id": "gh-repo-analytics",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 9,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.9,
+      "status_counts": "execution_error:7;fail:3",
+      "failure_type_counts": "NonZeroAgentExitCodeError:6;agent_setup_error:1;none:3"
+    },
+    {
+      "task_id": "jax-computing-basics",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 2,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.2,
+      "status_counts": "execution_error:6;fail:2;infra_error:1;timeout:1",
+      "failure_type_counts": "agent_setup_error:5;agent_timeout:1;infra_error:2;none:2"
+    },
+    {
+      "task_id": "jax-computing-basics",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:10",
+      "failure_type_counts": "agent_setup_error:5;verifier_incomplete:5"
+    },
+    {
+      "task_id": "jax-computing-basics",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 3,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.3,
+      "status_counts": "execution_error:5;fail:3;timeout:2",
+      "failure_type_counts": "agent_setup_error:5;agent_timeout:2;none:3"
+    },
+    {
+      "task_id": "parallel-tfidf-search",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 2,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.2,
+      "status_counts": "execution_error:8;fail:1;timeout:1",
+      "failure_type_counts": "agent_setup_error:4;agent_timeout:1;execution_error:1;infra_error:2;none:1;verifier_incomplete:1"
+    },
+    {
+      "task_id": "parallel-tfidf-search",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:10",
+      "failure_type_counts": "agent_setup_error:10"
+    },
+    {
+      "task_id": "parallel-tfidf-search",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 5,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.5,
+      "status_counts": "execution_error:8;infra_error:1;pass:1",
+      "failure_type_counts": "NonZeroAgentExitCodeError:4;agent_setup_error:4;docker_error:1;none:1"
+    },
+    {
+      "task_id": "python-scala-translation",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 10,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 1.0,
+      "status_counts": "execution_error:1;fail:9",
+      "failure_type_counts": "execution_error:1;fail:9"
+    },
+    {
+      "task_id": "python-scala-translation",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 10,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 1.0,
+      "status_counts": "fail:10",
+      "failure_type_counts": "fail:10"
+    },
+    {
+      "task_id": "python-scala-translation",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 9,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.9,
+      "status_counts": "fail:9;timeout:1",
+      "failure_type_counts": "fail:9;timeout:1"
+    },
+    {
+      "task_id": "react-performance-debugging",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:8;timeout:2",
+      "failure_type_counts": "agent_timeout:2;infra_error:3;verifier_incomplete:5"
+    },
+    {
+      "task_id": "react-performance-debugging",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 1,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.1,
+      "status_counts": "execution_error:8;fail:1;timeout:1",
+      "failure_type_counts": "agent_timeout:1;infra_error:2;none:1;verifier_incomplete:6"
+    },
+    {
+      "task_id": "react-performance-debugging",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 9,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.9,
+      "status_counts": "execution_error:2;fail:7;timeout:1",
+      "failure_type_counts": "NonZeroAgentExitCodeError:2;agent_timeout:1;none:7"
+    },
+    {
+      "task_id": "simpo-code-reproduction",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 1,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.1,
+      "status_counts": "execution_error:9;infra_error:1",
+      "failure_type_counts": "agent_setup_error:6;execution_error:1;infra_error:1;verifier_incomplete:2"
+    },
+    {
+      "task_id": "simpo-code-reproduction",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 1,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.1,
+      "status_counts": "execution_error:10",
+      "failure_type_counts": "agent_setup_error:5;execution_error:1;infra_error:1;verifier_incomplete:3"
+    },
+    {
+      "task_id": "simpo-code-reproduction",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 7,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.7,
+      "status_counts": "execution_error:8;fail:1;timeout:1",
+      "failure_type_counts": "NonZeroAgentExitCodeError:7;agent_setup_error:1;agent_timeout:1;verifier_incomplete:1"
+    },
+    {
+      "task_id": "spring-boot-jakarta-migration",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 10,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 1.0,
+      "status_counts": "fail:10",
+      "failure_type_counts": "fail:10"
+    },
+    {
+      "task_id": "spring-boot-jakarta-migration",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 10,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 1.0,
+      "status_counts": "fail:10",
+      "failure_type_counts": "fail:10"
+    },
+    {
+      "task_id": "spring-boot-jakarta-migration",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 10,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 1.0,
+      "status_counts": "fail:3;pass:7",
+      "failure_type_counts": "fail:3;none:7"
+    },
+    {
+      "task_id": "taxonomy-tree-merge",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:9;infra_error:1",
+      "failure_type_counts": "agent_setup_error:8;infra_error:1;verifier_incomplete:1"
+    },
+    {
+      "task_id": "taxonomy-tree-merge",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "execution_error:10",
+      "failure_type_counts": "agent_setup_error:5;verifier_incomplete:5"
+    },
+    {
+      "task_id": "taxonomy-tree-merge",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 8,
+      "eligible_for_rq1": true,
+      "eligible_fraction": 0.8,
+      "status_counts": "execution_error:8;timeout:2",
+      "failure_type_counts": "NonZeroAgentExitCodeError:8;agent_timeout:2"
+    },
+    {
+      "task_id": "trend-anomaly-causal-inference",
+      "method": "no_skill",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "infra_error:10",
+      "failure_type_counts": "infra_error:10"
+    },
+    {
+      "task_id": "trend-anomaly-causal-inference",
+      "method": "original_skills",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "infra_error:8;timeout:2",
+      "failure_type_counts": "agent_timeout:2;infra_error:8"
+    },
+    {
+      "task_id": "trend-anomaly-causal-inference",
+      "method": "skillmoo",
+      "n_total": 10,
+      "n_eligible": 0,
+      "eligible_for_rq1": false,
+      "eligible_fraction": 0.0,
+      "status_counts": "infra_error:10",
+      "failure_type_counts": "docker_error:10"
+    }
+  ]
+}

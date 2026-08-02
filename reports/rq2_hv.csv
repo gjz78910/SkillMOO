@@ -1,0 +1,13 @@
+task_id,task_num,opt_cost_usd,opt_runtime_sec,hv_ori_skill,hv_skillmoo,delta_hv_pct,cost_per_delta_hv
+citation-check,1,4.1539,9720,0.0016,0.0798,5031,0.0008
+data-to-d3,2,4.1437,4613,0.0015,0.0723,4580,0.0009
+dialogue-parser,3,3.3556,6428,0.0017,0.0489,2828,0.0012
+enterprise-information-search,4,4.2755,5191,0.0020,0.0612,2892,0.0015
+fix-build-agentops,5,2.2676,2305,0.0081,0.1783,2110,0.0011
+fix-build-google-auto,6,13.7338,3998,0.0009,0.0183,1845,0.0074
+gh-repo-analytics,8,1.9664,832,0.0012,0.0044,263,0.0075
+jax-computing-basics,9,2.8053,1717,0.0016,0.0319,1903,0.0015
+parallel-tfidf-search,10,9.6070,5083,0.0053,0.0480,807,0.0119
+python-scala-translation,11,1.8611,1545,0.0056,0.0296,430,0.0043
+react-performance-debugging,12,9.9575,6233,0.0055,0.1342,2322,0.0043
+spring-boot-jakarta-migration,14,1.7641,867,0.0078,0.0311,301,0.0059

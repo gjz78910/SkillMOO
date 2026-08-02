@@ -1,0 +1,11 @@
+operation,subcategory,n_edits,pass_rate_improved,cost_reduced,runtime_reduced
+Remove Skills,Drop peripheral or misaligned skills from bundle,11,8,9,5
+Remove Skills,Remove one skill indicated as redundant by evaluation,5,5,2,2
+Replace Skills,Replace lower-priority skills with optimizer-selected alternatives,7,5,7,4
+Add Skills,Add skills inferred as missing from current bundle,5,0,5,5
+Add Skills,Explicitly add object-oriented programming guidance,3,0,3,3
+Add Skills,Explicitly add functional programming style guidance,1,0,1,1
+Edit Skill Content,Rewrite skill to remove deprecated API mentions,2,2,2,1
+Edit Skill Content,Remove never-triggered guidance sections within a skill,2,0,2,2
+Reorder Bundle,Promote foundational setup step first to prevent timeout,1,1,1,0
+Reorder Bundle,Reorder bundle to reflect optimal invocation sequence,1,0,1,1

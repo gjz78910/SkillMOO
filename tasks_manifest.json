@@ -1,0 +1,21 @@
+{
+  "description": "Default 16-task SkillsBench SE pool used for the ASE 2026 NIER SkillMOO experiments.",
+  "se_task_pool": [
+    "citation-check",
+    "data-to-d3",
+    "dialogue-parser",
+    "enterprise-information-search",
+    "fix-build-agentops",
+    "fix-build-google-auto",
+    "flink-query",
+    "gh-repo-analytics",
+    "jax-computing-basics",
+    "parallel-tfidf-search",
+    "python-scala-translation",
+    "react-performance-debugging",
+    "simpo-code-reproduction",
+    "spring-boot-jakarta-migration",
+    "taxonomy-tree-merge",
+    "trend-anomaly-causal-inference"
+  ]
+}
