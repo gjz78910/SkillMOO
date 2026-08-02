@@ -159,7 +159,12 @@ python scripts/setup_skillsbench.py
 ```
 
   The script clones `benchflow-ai/skillsbench` at commit `593b0c6a3d95e0d4acc813788b12b6c044560b43` and applies the packaged task, skill, and verifier overlay.
-- Docker/Harbor runtime support required by task environments.
+- Docker running locally, and the [Harbor](https://github.com/harbor-framework/harbor) CLI that `skillmoo.skillsbench_runner` shells out to:
+
+```bash
+pip install harbor
+harbor --help  # confirms the CLI is on PATH
+```
 - API credentials for the **task solver** and **skill optimizer** agents (both use the same model):
 
 | Variable | Purpose | Example |
