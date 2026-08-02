@@ -15,7 +15,7 @@ def _add_paths(repo_root: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--repo-root", default=str(Path(__file__).resolve().parents[2]))
+    parser.add_argument("--repo-root", default=str(Path(__file__).resolve().parents[1]))
     parser.add_argument("--output-root", default="experiments/ase_nier_rerun")
     parser.add_argument("--task-ids", default="")
     parser.add_argument("--methods", default="no_skill,original_skills,skillmoo")
@@ -28,7 +28,7 @@ def main() -> None:
         help="Run each method N times with RNG seeds 0..N-1 (seed_0..seed_{N-1}). When N>0, overrides --seeds.",
     )
     parser.add_argument("--model-name", default="GLM-5")
-    parser.add_argument("--agent-name", default="claude-code")
+    parser.add_argument("--agent-name", default="terminus-2")
     parser.add_argument("--population-size", type=int, default=4)
     parser.add_argument("--num-generations", type=int, default=3)
     parser.add_argument("--max-retries-per-trial", type=int, default=1)

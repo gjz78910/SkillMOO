@@ -23,7 +23,7 @@ def _default_reports_dir(repo_root: Path) -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--repo-root", default=str(Path(__file__).resolve().parents[2]))
+    parser.add_argument("--repo-root", default=str(Path(__file__).resolve().parents[1]))
     parser.add_argument("--input-root", default="experiments/ase_nier_rerun")
     parser.add_argument("--baseline-method", default="original_skills")
     parser.add_argument(

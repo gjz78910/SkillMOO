@@ -17,6 +17,7 @@ SkillMOO/
 ├── README.md                                  # This guide: setup, modes, and key outputs
 ├── pyproject.toml                             # Python package metadata and dependencies
 ├── tasks_manifest.json                        # Default 16-task SkillsBench pool used by Mode B
+├── patches/skillsbench-ase-nier-overlay.tar.gz # Task and verifier changes applied during setup
 ├── src/skillmoo/                              # Core SkillMOO source code
 │   ├── candidates.py                          # Candidate bundle representation and population generation
 │   ├── config.py                              # Run configuration, method definitions, task-pool loading
@@ -34,7 +35,8 @@ SkillMOO/
 ├── scripts/
 │   ├── build_ase_nier_report.py               # Rebuild the RQ1/RQ2/RQ3 aggregate reports from a completed run
 │   ├── run_ase_nier_matrix.py                 # Full 16-task matrix runner (Mode B)
-│   └── compute_sk_esd_ranks.py                # Optional: Scott-Knott ESD r_p/r_c ranks (Table 2), needs R
+│   ├── compute_sk_esd_ranks.py                # Optional: Scott-Knott ESD r_p/r_c ranks (Table 2), needs R
+│   └── setup_skillsbench.py                   # Pins and prepares the external SkillsBench checkout
 ├── reports/                                   # Frozen results supporting paper tables
 │   ├── results_summary.csv                    # Per-task summary: 16 tasks × 3 methods (Table 2 / RQ1)
 │   ├── results_records.csv                    # Per-run evaluation detail per method/task (10 seeds each)
@@ -148,9 +150,15 @@ Weights are updated multiplicatively after each generation (gain × 1.2 on succe
 
 ## 5) Mode B: Full 16-Task Rerun (External Dependencies Required)
 
-This mode is **not** standalone. It requires:
+This mode requires external infrastructure:
 
-- A compatible `skillsbench/` checkout next to this package root.
+- The exact SkillsBench checkout and ASE-NIER task overlay, prepared by:
+
+```bash
+python scripts/setup_skillsbench.py
+```
+
+  The script clones `benchflow-ai/skillsbench` at commit `593b0c6a3d95e0d4acc813788b12b6c044560b43` and applies the packaged task, skill, and verifier overlay.
 - Docker/Harbor runtime support required by task environments.
 - API credentials for the **task solver** and **skill optimizer** agents (both use the same model):
 
@@ -175,6 +183,7 @@ python scripts/run_ase_nier_matrix.py \
   --methods no_skill,original_skills,skillmoo \
   --repeat-runs 10 \
   --model-name GLM-5 \
+  --agent-name terminus-2 \
   --population-size 4 \
   --num-generations 3 \
   --timeout-sec 900
@@ -271,7 +280,7 @@ When building Docker images locally, use mirror **build-args** where each task D
 
 ### Tasks and Skill Inventories
 
-All 16 SkillsBench SE tasks are included. Each task is paired with a curated skill pool sourced from the SkillsBench task environment. Single-skill tasks provide one targeted domain reference; multi-skill tasks bundle complementary guidance covering different aspects of the same problem.
+All 16 SkillsBench SE tasks are prepared by the setup script. Each task is paired with a curated skill pool sourced from the SkillsBench task environment. Single-skill tasks provide one targeted domain reference; multi-skill tasks bundle complementary guidance covering different aspects of the same problem.
 
 | ID | Task | Category | Skills in pool |
 |----|------|----------|----------------|
@@ -323,4 +332,4 @@ The table below shows augmented test item counts as collected by pytest (paramet
 | 15 | taxonomy-tree-merge | 40 | output file format, source preservation, hierarchy structure, cluster balance, naming constraints, sibling distinctiveness |
 | 16 | trend-anomaly-causal-inference | 41 | data cleaning correctness, anomaly detection, feature engineering, DID causal analysis, cross-file consistency |
 
-The augmented test files are stored in `tasks/<task-id>/tests/` in the SkillsBench repository. The original SkillsBench verifier suites (in `tasks-no-skills/<task-id>/tests/`) are preserved unchanged and served as the base; all additions were applied on top.
+The packaged SkillsBench overlay installs the augmented test files into both task variants while retaining the original compile and build gates as the base.
